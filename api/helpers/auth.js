@@ -1,4 +1,4 @@
-conts jwt = require("jesonwebtoken");
+const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 
 exports.verifyToken = (req, res, next) => {
@@ -18,7 +18,7 @@ exports.verifyToken = (req, res, next) => {
 };
 
 
-export.hasPermission = checkRoles = roles => {
+exports.hasPermission = checkRoles = roles => {
   return (req,res, next) => {
     if (req.user && roles.includes (req.user.role)) {
       return next();

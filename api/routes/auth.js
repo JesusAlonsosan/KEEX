@@ -1,8 +1,8 @@
-const expresss = require('express')
+const express = require('express')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const router = express.Router()
-const bcrypt = require('../models/User')
+const User = require('../models/User')
 
 router.post('/register' , (req, res) => {
   const salt = bcrypt.genSaltSync(10)
@@ -49,7 +49,7 @@ router.post('/login', (req, res) => {
 }
 
 jwt.sign (
-  { id: user._id }
+  { id: user._id },
   process.env.SECRET,
   {
     expiresIn: 86400

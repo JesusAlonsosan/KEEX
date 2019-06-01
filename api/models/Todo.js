@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const todoSchema = new Schema(
   {
     author: {
-      tyoe : Schema.Types.ObjectId,
+      type : Schema.Types.ObjectId,
       ref: "User",
       required: true,
     },
