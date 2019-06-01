@@ -8,10 +8,10 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
-
+const cors         = require('cors');
 
 mongoose
-  .connect('mongodb://localhost/api', {useNewUrlParser: true})
+  .connect(process.env.DB, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -52,7 +52,16 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 
 const index = require('./routes/index');
-app.use('/', index);
+const todo  = require('./routes/todos');
+const auth  = require('./routes/auth');
+app.use('/api', index)
+app.use('/api/todos', todo)
+app.use('/api/auth', auth)
+
+
+app.use('*', (req, res) => {
+  res.sendFile(path.join(__dirname, public, 'index.html'))
+})
 
 
 module.exports = app;
