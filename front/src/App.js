@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Router from './Router'
+import NavBar from './components/common/Navbar'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  state ={
+    user :{}
+  }
+
+  setUser = user => {
+    this.setState({ user })
+  }
+
+  logout = () => {
+    localStorage.removeItem('TOKEN')
+    localStorage.removeItem('USER')
+    let { user } = this.state
+    user = {}
+    this.setState({ user })
+    window.location.reload()
+  }
+
+  componentWillMount () {
+    const user = JSON.parse(localStorage.getItem('USER'))
+    if (user) {
+      this.setState({ user })
+    }
+  }
+
+  render () {
+    const { user } = this.state
+    return (
+      <div className='App'>
+    <NavBar {...user} logout={this.logout}/>
+
+      <div className='uk-section'>
+    <Router setUser={this.setUser} user={user}/>
+  </div>
+</div>
+    )
+  }
+
 }
 
-export default App;
+export default App
