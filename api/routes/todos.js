@@ -75,6 +75,8 @@ router.patch("/:id", authUtils.verifyToken, (req, res) => {
     });
 });
 
+
+
 // delete todo
 router.delete("/:id", authUtils.verifyToken, (req, res) => {
   const { id } = req.params;
