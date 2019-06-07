@@ -55,7 +55,7 @@ const index = require('./routes/index');
 const todo  = require('./routes/todos');
 const auth  = require('./routes/auth');
 app.use('/api', index)
-app.use('/api/todos', todo)
+//app.use('/api/todos', todo)
 app.use('/api/auth', auth)
 
 

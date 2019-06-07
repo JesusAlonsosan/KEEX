@@ -3,8 +3,17 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const router = express.Router()
 const User = require('../models/User')
+const uploader = require("../helpers/multer")
 
-router.post('/register' , (req, res) => {
+router.post('/register' , (req, res, next) => {
+  let {password,confirmPassword} = req.body;
+  if ( password !== confirmPassword )
+    return res.status(500).json({
+      error:{},
+      message:"Contraseñas no conciden"
+    })
+
+
   const salt = bcrypt.genSaltSync(10)
   const hasshedPassword = bcrypt.hashSync(req.body.password, salt)
   User.create({...req.body, password: hasshedPassword})
@@ -20,17 +29,14 @@ router.post('/register' , (req, res) => {
         res.status(200).json({token, user})
       }
     )
-  })
-  .catch(error => {
-    res.status(500).json({
-      error,
-      message: 'No se creo el usuario'
+  }).catch(error => {
+      error.action = 'No se creo el usuario'
+      next(error)
     })
-  })
 })
 
 
-router.post('/login', (req, res) => {
+router.post('/login', (req, res, next) => {
   const { email, password } = req.body
   User.findOne ({ email }).then(user => {
     if (!user) {
@@ -48,19 +54,42 @@ router.post('/login', (req, res) => {
   })
 }
 
-jwt.sign (
-  { id: user._id },
-  process.env.SECRET,
-  {
+jwt.sign ({ id: user._id },process.env.SECRET,{
     expiresIn: 86400
       },
       (err, token) => {
         // if (err) throw err;
         delete user._doc.password
         res.status(200).json({ token, user })
-      }
-     )
-   });
+      })
+
+   }).catch(error => {
+    error.action = 'No se logea el usuario'
+    next(error)
+  })
 })
+
+
+router.patch('/:id/edit', uploader.single('image'),(req,res)=>{
+  let {id}=req.params
+  let user = req.body
+
+  if (req.file){
+    const image =req.file.secure_url
+    user.image = image
+    //user['image']
+  }
+
+
+User.findByIdAndUpdate({_id:id},{ $set: {...user}}, {new: true}).then(user=>
+  res.status(200).json({
+      user
+  })
+).catch(error => {
+  error.action = 'No se actualizo el usuario'
+  next(error)
+  })
+})
+  
 
 module.exports = router

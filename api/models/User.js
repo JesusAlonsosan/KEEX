@@ -4,7 +4,12 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema(
   {
     username: {
+      required: true,
       type: String,
+    },
+    lastname:{
+      required:true,
+      type: String
     },
     email: {
       required: true,
@@ -15,6 +20,19 @@ const userSchema = new Schema(
       required: true,
       type: String,
     },
+    raiting:{
+      type: Number,
+      default: 0
+    },
+    image:{
+      default:"https://res.cloudinary.com/dhgfid3ej/image/upload/v1558806718/profileapp/asdsadsa_tuo0fx.jpg",
+      type: String,
+    },
+    description: {
+      type: String,
+      default:""
+    }
+
   },
   { timestamps: true }
 );

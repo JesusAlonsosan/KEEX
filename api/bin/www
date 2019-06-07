@@ -13,11 +13,14 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
   // always log the error
   console.error('ERROR', req.method, req.path, err);
-
-  // only render if the error ocurred before sending the response
-  if (!res.headersSent) {
+    if (!res.headersSent) {
+      const error = {
+        name:err.name,
+        message:err.message,
+        action: err.action
+    };
     res.status(500);
-    res.render('error');
+    res.json({error});
   }
 });
 
