@@ -8,4 +8,4 @@ const productSchema = new Schema({
     lowercase: true }
 });
 
-module.exports = mongoose.model("Product", productSchema);
+module.exports = mongoose.model("Category", productSchema);

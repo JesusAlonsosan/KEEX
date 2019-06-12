@@ -54,14 +54,20 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 const todo  = require('./routes/todos');
 const auth  = require('./routes/auth');
+const product = require('./routes/product')
+const category = require('./routes/category')
+
 app.use('/api', index)
-//app.use('/api/todos', todo)
+app.use('/api/todos', todo)
 app.use('/api/auth', auth)
+app.use('/api/product', product)
+app.use('/api/category', category)
+
+
 
 
 app.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, public, 'index.html'))
 })
-
 
 module.exports = app;
