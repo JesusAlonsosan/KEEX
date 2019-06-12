@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const NavBar = ({ _id, email, username, logout }) => (
   <nav className='uk-navbar-container' uk-navbar='true'>
     <div className='uk-navbar-left'>
-      <a className='uk-navbar-item uk-logo' href='#'>
+      <a className='uk-navbar-item uk-logo' href='#navbar'>
         Logo
       </a>
     </div>
@@ -22,7 +22,7 @@ const NavBar = ({ _id, email, username, logout }) => (
       ) : (
         <ul className='uk-navbar-nav'>
           <li onClick={logout}>
-            <a href='#'>Cerrar sesión</a>
+            <a href='#navbar'>Cerrar sesión</a>
           </li>
         </ul>
       )}
