@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import AuthForm from './AuthForm'
 import { login, register } from '../../services/auth'
-
+import backgroundI from '../assets/img/fondolending.jpg'
 class AuthFormContainer extends Component {
   state = {
     auth: {
@@ -57,8 +57,8 @@ class AuthFormContainer extends Component {
     console.log(this.props)
     const { error, auth } = this.state
     return (
-      <div>
-        <div className='uk-flex uk-flex-center'>
+      <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style={ {backgroundImage:`url(${backgroundI})`, height:'90vh'} }>
+        <div className='uk-flex uk-flex-center '>
           <AuthForm
             {...auth}
             error={error}
@@ -66,6 +66,7 @@ class AuthFormContainer extends Component {
             handleChange={this.handleChange}
           />
         </div>
+        
       </div>
     )
   }

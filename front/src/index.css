@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.titleh1 {
+  font-size: 6rem;
+  line-height: 1.2;
+  color: #0aebdf;
+}
+
+.subtitleh2 {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.footerstyles {
+    padding: 60px 0;
+}
+
+.footercontainer {
+    background: #262626;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 150px;
+    padding: 60px 0;
+}
+
+.footerh2{
+  color: #fff;
+}
+
+.footerspan{
+  color: #9e9e9e;
+}
+
+
+
+

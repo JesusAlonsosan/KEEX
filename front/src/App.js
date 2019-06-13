@@ -34,7 +34,7 @@ class App extends Component {
       <div className='App'>
     <NavBar {...user} logout={this.logout}/>
 
-      <div className='uk-section'>
+      <div  >
     <Router setUser={this.setUser} user={user}/>
   </div>
 </div>
