@@ -8,8 +8,9 @@ const Titlelending = () => (
 
     
     <div className="uk-flex uk-flex-column uk-text-center">
-        <h1 className="titleh1">KEEX</h1>
-        <p className="uk-text-large uk-flex uk-flex-center footerh2">En una App para organizar una red propia de trueque</p>
+        {/*<img src={require('../assets/img/logo/logo.png')}/>*/}
+        <h1 className="titlehkeex">KEEX</h1>
+        <p className="uk-text-large uk-flex uk-flex-center">En una App para organizar una red propia de trueque</p>
     </div>
   
   </div>

@@ -8,16 +8,23 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family:'Roboto'
     monospace;
 }
 
 
-.titleh1 {
-  font-size: 6rem;
+.titlehkeex {
+  font-size: 10rem;
   line-height: 1.2;
-  color: #0aebdf;
+  color: #f3e306;
 }
+
+.titleapp {
+  font-size: 55px !important;
+  color: #ffffff;
+  font-family: 'Open Sans'
+}
+
 
 .subtitleh2 {
   font-size: 40px;
@@ -39,8 +46,13 @@ code {
     padding: 60px 0;
 }
 
+.logonavbar{
+  color: #000000;
+}
+
+
 .footerh2{
-  color: #fff;
+  color: #fff;  
 }
 
 .footerspan{
