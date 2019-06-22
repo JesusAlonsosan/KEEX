@@ -22,10 +22,11 @@ class AuthFormContainer extends Component {
     const { auth } = this.state
     login(auth)
       .then(({ token, user }) => {
+        console.log('Done')
         localStorage.setItem('TOKEN', token)
         localStorage.setItem('USER', JSON.stringify(user))
         this.props.setUser(user)
-        this.props.history.push('/')
+        this.props.history.push('/home')
       })
       .catch(error => {
         return this.setState({ error: error.message })

@@ -5,9 +5,9 @@ axios.defaults.headers = {
 }
 
 const isProduction = process.env.NODE_ENV === 'production'
-const base_url = isProduction
-  ? 'https://proyecto-m3.herokuapp.com/api'
-  : 'http://localhost:3000/api'
+const base_url =  isProduction
+  ? 'https://keex.herokuapp.com/api'
+ : 'http://localhost:3000/api'
 
 export const login = auth => {
   return axios
