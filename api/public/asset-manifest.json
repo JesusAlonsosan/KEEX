@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.de79f4f3.chunk.css",
+    "main.js": "/static/js/main.9744ec93.chunk.js",
+    "main.js.map": "/static/js/main.9744ec93.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.858b5ee9.chunk.css": "/static/css/2.858b5ee9.chunk.css",
+    "static/js/2.458314f5.chunk.js": "/static/js/2.458314f5.chunk.js",
+    "static/js/2.458314f5.chunk.js.map": "/static/js/2.458314f5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ab74c18a68e87066980aa460d917610c.js": "/precache-manifest.ab74c18a68e87066980aa460d917610c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.858b5ee9.chunk.css.map": "/static/css/2.858b5ee9.chunk.css.map",
+    "static/css/main.de79f4f3.chunk.css.map": "/static/css/main.de79f4f3.chunk.css.map",
+    "static/media/1.jpeg": "/static/media/1.cfe96790.jpeg",
+    "static/media/2.jpeg": "/static/media/2.3b6060fa.jpeg",
+    "static/media/3.jpeg": "/static/media/3.adc479a6.jpeg",
+    "static/media/4.jpeg": "/static/media/4.8e37e18b.jpeg",
+    "static/media/atico.jpeg": "/static/media/atico.65ba0636.jpeg",
+    "static/media/fondolending.jpg": "/static/media/fondolending.d508f581.jpg",
+    "static/media/logo2.png": "/static/media/logo2.7a98f611.png"
+  }
+}
