@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import AuthForm from './AuthForm'
 import { login, register } from '../../services/auth'
-import backgroundI from '../assets/img/fondolending.jpg'
+import backgroundI from '../assets/img/atico.jpeg'
 class AuthFormContainer extends Component {
   state = {
     auth: {

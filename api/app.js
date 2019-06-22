@@ -37,6 +37,13 @@ app.use(require('node-sass-middleware')({
   dest: path.join(__dirname, 'public'),
   sourceMap: true
 }));
+
+app.use(
+  cors({
+    origin: ['http://localhost:3001', 'https://keex.herokuapp.com/  '],
+  })
+) 
+
       
 
 app.set('views', path.join(__dirname, 'views'));
