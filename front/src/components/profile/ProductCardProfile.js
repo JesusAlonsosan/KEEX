@@ -1,13 +1,14 @@
 import React from 'react'
 
-const ProductCardProfile = ({inStock,image})=>(
-    <div>
-        <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
-                <img src={image} width='550px' height='550px' alt=""/>
-            </div>
-            
+const ProductCardProfile = ({description,image,name})=>(
+    <div className=" uk-card uk-card-default" style={{margin: 20,borderRadius:15,padding:10}} >
+        <div className="uk-card-media-center uk-flex uk-flex-center">
+            <img  src={image} width='200px' height='500px' alt=""/>
         </div>
+        <div>
+            <h3 className="uk-card-title card-title">{name}</h3>
+            <p>{description}</p>
+         </div>
     </div>
 )
 
