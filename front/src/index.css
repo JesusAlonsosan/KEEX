@@ -16,7 +16,7 @@ code {
 .titlehkeex {
   font-size: 10rem;
   line-height: 1.2;
-  color: #f3e306;
+  color: rgb(255, 255, 255);
 }
 
 .titleapp {
@@ -34,6 +34,10 @@ code {
 
 .footerstyles {
     padding: 60px 0;
+}
+
+.footerkeex{
+  font-size: 60px;
 }
 
 .footercontainer {

@@ -9,6 +9,7 @@ export default class ProfileContainer extends Component{
 
     state={
         data:[
+
             {
                 image:backgroundI,
                 name:'Cosas viejas',
@@ -17,8 +18,8 @@ export default class ProfileContainer extends Component{
                 inStock:true,
             },
             {
-                image:'https://i5.walmartimages.com/asr/e4bdfc8b-3e36-406d-ad42-7f900a20b7fd_1.63516d57aa74f6a37af3326c15a0a803.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF',
-                name:'Cartas yugi',
+                image:'https://pbs.twimg.com/media/DvmISHOXgAAc-VV.png',
+                name:'Godzilla',
                 description:'Lorem impsu dolor Cartas',
                 category:'123nijisajd213',
                 inStock:true,
@@ -54,12 +55,12 @@ export default class ProfileContainer extends Component{
                 inStock:true,
         },
         user:{
-            username:'Jesus Alanso',
+            username:'Jesus Alonso',
             lastname:'Sanchez',
-            email:'',
+            email:'info@keex.com.mx',
             raiting:9.0,
             image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNdi02uZ-aY9zVLk3TcmmdQiZeJuZewCPoR1DQicRCqrVge-8q',
-            description:'Lorem ipsum dolor sit amet, consectetur adipiscing'
+            description:'Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet '
 
         }
     }
@@ -79,8 +80,6 @@ export default class ProfileContainer extends Component{
                     )}
                 </div>
             </div>
-          
-
 
           
           </div>

@@ -7,8 +7,8 @@ const Footer = () => (
     <div className="uk-container uk-container-center">
       <footer className="uk-text-center uk-flex">
 
-            <div className="uk-text-center uk-width-medium-1-3 uk-margin-bottom">
-             <p>KEEX</p>
+            <div className="uk-text-center uk-width-medium-1-3 uk-margin-bottom uk-text-primary uk-text-lead">
+             <p className="footerkeex">KEEX</p>
             </div>
             <div className="uk-text-center uk-width-medium-1-3 uk-margin-bottom">
                 <h2 className="footerh2">¿Necesitas ayuda? contactanos <span className="footerspan">info@keex.com.mx</span> </h2>

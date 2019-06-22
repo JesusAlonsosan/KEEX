@@ -13,7 +13,7 @@ const Whatislending = ({toons}) => (
   >
     <div className="uk-container-center uk-text-center">
       <h2 className="subtitleh2 uk-text-center" style={{color:'#6e6e6e'}}>¿KEEX EN QUÉ CONSISTE?</h2>
-      <p className="uk-text-large">
+      <p className="uk-text-large uk-text-center">
         En que cualquier sector de la sociedad puede hacer un intercambio de algún
         objeto y servicio por otros objetos o servicios.
       </p>
@@ -23,10 +23,10 @@ const Whatislending = ({toons}) => (
 
     <div  className='uk-flex uk-flex-middle'>
     {toons.map((data,i) =><Toonslending key={i} {...data} />)}
-    <div className=" uk-panel uk-flex uk-flex-center uk-flex-column uk-flex-middle">
+    <div className=" uk-panel uk-flex uk-flex-center@s uk-flex-column">
         <div>
-        <img src={image3} width='100px' height='100px'/>
-        <img src={image4} width='100px' height='100px'/>
+        <img src={image3} width='150px' height='150px'/>
+        <img src={image4} width='150px' height='150px'/>
         </div>
         
         <p> Lorem ipsum sit amet, consectetur adipiscing elit,

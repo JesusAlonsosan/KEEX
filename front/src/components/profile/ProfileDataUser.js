@@ -1,4 +1,5 @@
 import React from 'react'
+import Raiting from '../../Raiting';
 
 const ProfileDataUser = ({username,description,image,raiting})=>(
     <div className=" uk-flex uk-flex-center uk-flex-column	" >
@@ -21,7 +22,7 @@ const ProfileDataUser = ({username,description,image,raiting})=>(
                     <a className="uk-button uk-button-text" href="#">raiting</a>
                 </div>
                 <div>
-                    <a className="uk-button uk-button-text" href="#">{raiting} starts</a>
+                     <Raiting/>
                 </div>
             </div>
 
