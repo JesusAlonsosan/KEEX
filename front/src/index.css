@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -9,20 +9,18 @@ body {
 
 code {
   font-family:'Roboto'
-    monospace;
 }
 
 
 .titlehkeex {
-  font-size: 10rem;
+  font-size: 15rem;
   line-height: 1.2;
-  color: rgb(255, 255, 255);
+  color:#ffffff;
 }
 
 .titleapp {
   font-size: 55px !important;
   color: #ffffff;
-  font-family: 'Open Sans'
 }
 
 
@@ -36,8 +34,10 @@ code {
     padding: 60px 0;
 }
 
-.footerkeex{
-  font-size: 60px;
+.footerk {
+  font-size: 100px;
+  color: #9e9e9e;
+  font-family: 'Roboto  '
 }
 
 .footercontainer {
@@ -56,7 +56,7 @@ code {
 
 
 .footerh2{
-  color: #fff;  
+  color: #ffffff;  
 }
 
 .footerspan{

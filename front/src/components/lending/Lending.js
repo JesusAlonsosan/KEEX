@@ -27,17 +27,19 @@ export default class Lending extends Component {
       <div>
         <Titlelending />
         <div className=" uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle"
-          style={{ padding: "5% 20% 7%" }}  style={{ height: "600px" ,backgroundColor: "#2b3442", }}>
+          style={{ padding: "5% 20% 7%" }}  style={{ height: "400px" ,backgroundColor: "#2b3442", }}>
 
           <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical"
            >
 
-            <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;" style={{color:'#fff'}}> ¿KEEX QUE ES? </h1>
-            <p
-              uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;" style={{fontSize:26}}
-            >
+            <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;" style={{color:'#F1F1F1'}}> 
+             ¿KEEX, QUÉ ES? 
+            </h1>
+
+            <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;" style={{fontSize:31, color:'#CBC9C9'}} >
               En una App para organizar una red propia de trueque.
             </p>
+
           </div>
         </div>
 

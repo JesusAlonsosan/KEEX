@@ -10,7 +10,7 @@ const Titlelending = () => (
     <div className="uk-flex uk-flex-column uk-text-center">
         {/*<img src={require('../assets/img/logo/logo.png')}/>*/}
         <h1 className="titlehkeex">KEEX</h1>
-        <p className="uk-text-large uk-flex uk-flex-center">En una App para organizar una red propia de trueque</p>
+        <p className="uk-text-large uk-flex uk-flex-center"></p>
     </div>
   
   </div>

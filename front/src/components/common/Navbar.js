@@ -5,7 +5,7 @@ const NavBar = ({ _id, email, username, logout }) => (
   <nav className='uk-navbar-container' uk-navbar='true' uk-sticky="bottom: #offset">
     <div className='uk-navbar-left'>
       <a className='uk-navbar-item uk-logo uk-flex uk-flex-left' href='/'>
-      <img src={require('../assets/img/logo/logo2.png')} width="18%"/>
+      <img src={require('../assets/img/logo/logo2.png')} width="23%"/>
       </a>
     </div>
 
