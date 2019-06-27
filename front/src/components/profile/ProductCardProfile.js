@@ -6,7 +6,7 @@ const ProductCardProfile = ({description,image,name})=>(
             <img  src={image} width='200px' height='500px' alt=""/>
         </div>
         <div>
-            <h3 className="uk-card-title card-title">{name}</h3>
+            <h3 className="uk-card-title card-title uk-text-large">{name}</h3>
             <p>{description}</p>
          </div>
     </div>

@@ -20,8 +20,8 @@ render(){
     let { raiting } = this.state;
 
 return (
-    <div className="">
-        <h2>Keexting desde: { raiting } </h2>
+    <div className="uk-text small">
+        <h2 className="">Keexting desde: { raiting } </h2>
         <StartRaitingComponent
         name="rate1" 
         starCount={5}

@@ -54,14 +54,14 @@ export default class ProfileContainer extends Component {
       inStock: true
     },
     user: {
-      username: "Jesus Alonso",
+      username: "Jesús Alonso",
       lastname: "Sanchez",
       email: "info@keex.com.mx",
       raiting: 9.0,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNdi02uZ-aY9zVLk3TcmmdQiZeJuZewCPoR1DQicRCqrVge-8q",
+        "https://tuul.tv/themes/tuul_lite/img/default-user.jpg ",
       description:
-        "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet "
+        "La informática es mi hobby, mi profesión y mi pasión. Soy un afortunado usuario y desarrollador. Disfruto de esto desde hace ya más de 15 años, y gracias a Ironhack "
     }
   };
 
@@ -69,10 +69,10 @@ export default class ProfileContainer extends Component {
     let { data, notFound, user } = this.state;
     let item = true;
     return (
-      <div style={{ backgroundColor: "#262626", padding: 60 }}>
+      <div style={{ backgroundColor: "rgb(240, 235, 2)", padding: 60 }}>
         <div
           style={{
-            backgroundColor: "rgb(43, 52, 66)",
+            backgroundColor: "rgb(240, 235, 2)",
             width: "100%",
             borderRadius: 15,
             padding: 20

@@ -6,11 +6,11 @@ const Swipe = ({products}) => (
     
     <div className="uk-flex uk-flex-center" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push" >
 
-    <button className="uk-button uk-button-primary" uk-icon="icon: heart">Te gusta</button>
+    <button className="uk-button uk-button-primary uk-text-bold" uk-icon="icon: heart; ratio: 3.5"></button>
 
-      <img src="http://idata.over-blog.com/0/36/82/48/ONVNI/Sirene01.jpg" />
+      <img src="https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDM1MzQ4fGltYWdlL2pwZWd8aGQ5L2hhMy84Nzk4NzA4NDk4NDYyfDdiZDIzNTFhODMwMWY2MDAwNDNlY2M5MDAzYTg2NTgzNzVmYTBmNGQxZWQwOWJhMjFhNDg4ZmNlOGI0ZjI5NzM" />
 
-    <button className="uk-button uk-button-danger" uk-icon="icon: close">No te gusta</button>
+    <button className="uk-button uk-button-danger uk-text-bold" uk-icon="icon: close; ratio: 3.5"></button>
 
 </div>
 

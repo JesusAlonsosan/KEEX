@@ -42,10 +42,10 @@ class SwipeContainer extends Component {
     let { products } = this.state;
     let item = true;
     return (
-      <div style={{ backgroundColor: "#262626", padding: 60 }}>
+      <div style={{ backgroundColor: "rgb(240, 235, 2)", padding: 60 }}>
         <div
           style={{
-            backgroundColor: "rgb(43, 52, 66)",
+            backgroundColor: "",
             //width: "100%",
             borderRadius: 15,
             padding: 20
