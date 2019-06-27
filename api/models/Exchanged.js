@@ -3,28 +3,23 @@ const Schema = mongoose.Schema;
 
 const exchangedSchema = new Schema(
   {
-    idbidder: { 
-      type: Schema.Types.ObjectId, 
-      ref: "User" },
 
     idproducttender: { 
       type: Schema.Types.ObjectId, 
-      ref: "Product"  },
-
+      ref: "Product"
+    },
     idapplicant: { 
       type: Schema.Types.ObjectId, 
-      ref: "User" },
-
-    idexchanged: { 
+      ref: "User" 
+    },
+    idexchanged: {
       type: Schema.Types.ObjectId, 
-      ref: "Product", default:""},
-
-    date: {type: String},
-
+      ref: "Product" 
+    },
     status: {
       enum:["accepted","rejected","pending"], 
       type:String,default:"pending"}
-  },
+    },
   
     { timestamps: true }
 );

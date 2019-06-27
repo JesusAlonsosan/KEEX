@@ -1,36 +1,39 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = ({ _id, email, username, logout }) => (
-  <nav className='uk-navbar-container' uk-navbar='true' uk-sticky="bottom: #offset">
-    <div className='uk-navbar-left'>
-      <a className='uk-navbar-item uk-logo uk-flex uk-flex-left' href='/'>
-      <img src={require('../assets/img/logo/logo2.png')} width="23%"/>
+  <nav
+    className="uk-navbar-container"
+    uk-navbar="true"
+    uk-sticky="bottom: #offset"
+  >
+    <div className="uk-navbar-left">
+      <a className="uk-navbar-item uk-logo uk-flex uk-flex-left" href="/">
+        <img src={require("../assets/img/logo/logo2.png")} width="23%" />
       </a>
     </div>
 
-    <div className='uk-navbar-right'>
+    <div className="uk-navbar-right">
       {!_id ? (
-        <ul className='uk-navbar-nav'>
+        <ul className="uk-navbar-nav uk-text-lead">
           <li>
-            <Link to='/login'>Iniciar sesión</Link>
+            <Link to="/login" className="">Iniciar sesión</Link>
           </li>
           <li>
-            <Link to='/register'>Registro</Link>
+            <Link to="/register">Registro</Link>
           </li>
         </ul>
       ) : (
-        <ul className='uk-navbar-nav'>
+        <ul className="uk-navbar-nav">
           <li onClick={logout}>
-            <a href='#navbar'>Cerrar sesión</a>
+            <a href="#navbar">Cerrar sesión</a>
           </li>
         </ul>
       )}
     </div>
   </nav>
-)
+);
 
-export default NavBar
-
+export default NavBar;
 
 //uk-navbar-transparent  NAVBAR TRANSPARENTE

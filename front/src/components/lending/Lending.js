@@ -32,7 +32,7 @@ export default class Lending extends Component {
           <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical"
            >
 
-            <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;" style={{color:'#F1F1F1'}}> 
+            <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;" style={{color:'#FFFF'}}> 
              ¿KEEX, QUÉ ES? 
             </h1>
 
