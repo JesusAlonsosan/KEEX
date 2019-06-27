@@ -4,7 +4,7 @@ import Raiting from '../../Raiting';
 const ProfileDataUser = ({username,description,image,raiting})=>(
     <div className=" uk-flex uk-flex-center" >
     <div className="uk-container uk-container-center ">
-        <img src={image} width='300px' height='300px' style={{borderRadius:150/2}}/>
+        <img src={image} width='350px' height='35   0px' style={{borderRadius:150/2}}/>
     </div>
     <div className="uk-container uk-container-xsmall uk-flex uk-flex-center"  style={{backgroundColor:'rgb(240, 235, 2)',padding:10 ,borderRadius:15,marginTop:10 }}>
 
