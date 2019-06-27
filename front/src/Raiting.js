@@ -8,7 +8,7 @@ class Raiting extends React.Component {
         super();
 
         this.state = {
-            raiting: 1
+            raiting: ""
         };
 }
 
@@ -20,13 +20,13 @@ render(){
     let { raiting } = this.state;
 
 return (
-    <div className="uk-text small">
-        <h2 className="">Keexting desde: { raiting } </h2>
-        <StartRaitingComponent
-        name="rate1" 
+    <div className="uk-text uk-text-medium">
+        <h2 className="uk-text uk-text-large">{ raiting } </h2>
+        <StartRaitingComponent className=""
+        name="rate2" 
         starCount={5}
         value={raiting}
-        //onStarClick={this.onStarClick.bind(this)}
+        starColor={String}
         />
     </div>
     ); 

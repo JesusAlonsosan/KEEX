@@ -83,8 +83,8 @@ export default class ProfileContainer extends Component {
           <div
             className="space uk-child-width-1-4@m uk-flex uk-flex-wrap uk-flex-center "
             style={{
-              marginTop: 20,
-              backgroundColor: "#fff",
+              marginTop: 30,
+              backgroundColor: "rgb(240, 235, 2)",
               padding: 10,
               borderRadius: 15
             }}

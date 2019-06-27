@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Swipe = ({products}) => (
     
-    <div className="uk-flex uk-flex-center" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push" >
+    <div className="uk-flex uk-flex-center" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push" height="" >
 
     <button className="uk-button uk-button-primary uk-text-bold" uk-icon="icon: heart; ratio: 3.5"></button>
 
