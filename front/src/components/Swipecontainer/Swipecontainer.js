@@ -1,6 +1,8 @@
 import React,{Component} from "react";
 import { Link } from "react-router-dom";
+import Footer from "../common/Footer";
 import Swipe from './Swipe'
+
 
 class SwipeContainer extends Component {
   state = {
@@ -42,7 +44,7 @@ class SwipeContainer extends Component {
     let { products } = this.state;
     let item = true;
     return (
-      <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style={{ backgroundColor:  "rgb(240, 235, 2)", padding: "60px" ,height:"91.5vh" }}>
+      <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style={{ backgroundColor:  "rgb(240, 235, 2)", padding: "60px" ,height:"91.5vh"  }}>
         <div
           style={{
             backgroundColor: "",
@@ -57,6 +59,8 @@ class SwipeContainer extends Component {
         
           </div>
         </div>
+       
+        
       </div>
     );
   }
