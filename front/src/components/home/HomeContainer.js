@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import backgroundI from "../assets/img/fondolending.jpg";
+import backgroundI from "../assets/img/atico.jpeg";
 
 import Cards from '../common/Cards';
 import CategoryBar from './CategoryBar';
@@ -16,9 +16,9 @@ export default class HomeContainer extends Component{
                 inStock:true,
             },
             {
-                image:'https://i5.walmartimages.com/asr/e4bdfc8b-3e36-406d-ad42-7f900a20b7fd_1.63516d57aa74f6a37af3326c15a0a803.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF',
+                image:backgroundI,
                 name:'Cartas yugi',
-                description:'Lorem impsu dolor Cartas',
+                description:'Lorem impsu dolor askdoasijdoiasdnoi',
                 category:'123nijisajd213',
                 inStock:true,
             },
@@ -31,8 +31,22 @@ export default class HomeContainer extends Component{
             },
             {
                 image:backgroundI,
-                name:'Cosas medianas',
+                name:'Cosas media',
                 description:'Lorem impsu dolor askdoasijdoiasdnoi',
+                category:'123nijisajd213',
+                inStock:true,
+            },
+            {
+                image:backgroundI,
+                name:'Cosas musica',
+                description:'Lorem ipsum dolor sit amet, consectetur adipiscing.',
+                category:'123nijisajd213',
+                inStock:true,
+            },
+            {
+                image:backgroundI,
+                name:'Cosas musica',
+                description:'Lorem ipsum dolor sit amet, consectetur adipiscing.',
                 category:'123nijisajd213',
                 inStock:true,
             },
@@ -59,10 +73,10 @@ export default class HomeContainer extends Component{
         let item= true
         return(
             <div 
-            style={{backgroundColor:'#262626',padding:80,height:item?null:'90vh' }}>
+            style={{backgroundColor:'rgb(240, 235, 2)',padding:80,height:item?null:'90vh' }}>
             <CategoryBar/>
             
-            <div className="uk-container uk-container-center"  style={{backgroundColor:'#fff', width:'100%',padding:10 ,borderRadius:15, height:item?null:'600px' }}>
+            <div className="uuk-container uk-container-xpand"  style={{backgroundColor:'rgb(240, 235, 2)', width:'100%',padding:10 ,borderRadius:15, height:item?null:'600px' }}>
             <div className="uk-child-width-1-5@m uk-flex uk-flex-wrap uk-flex-center" uk-grid>
              {item ? data.map((item,i)=>
                 <Cards key={i} {...item}/>)
