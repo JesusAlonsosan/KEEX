@@ -78,7 +78,7 @@ export default class ProfileContainer extends Component {
             padding: 20
           }}
         >
-          <ProfileDataUser {...user} />
+          <ProfileDataUser className="" {...user} />
 
           <div
             className="space uk-child-width-1-4@m uk-flex uk-flex-wrap uk-flex-center "

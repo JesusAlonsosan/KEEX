@@ -42,7 +42,7 @@ class SwipeContainer extends Component {
     let { products } = this.state;
     let item = true;
     return (
-      <div style={{ backgroundColor: "rgb(240, 235, 2)", padding: 60 ,height:"90vh" }}>
+      <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style={{ backgroundColor:  "rgb(240, 235, 2)", padding: "60px" ,height:"91.5vh" }}>
         <div
           style={{
             backgroundColor: "",
@@ -51,7 +51,7 @@ class SwipeContainer extends Component {
             padding: 20
           }}
         >
-          <div style={{ marginTop: 100 }}>
+          <div style={{ marginTop: 8 }}>
            
               <Swipe products={products} />
         
