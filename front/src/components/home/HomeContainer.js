@@ -73,10 +73,10 @@ export default class HomeContainer extends Component{
         let item= true
         return(
             <div 
-            style={{backgroundColor:'rgb(240, 235, 2)',padding:80,height:item?null:'90vh' }}>
+            style={{backgroundColor:'#fefe3b',padding:80,height:item?null:'90vh' }}>
             <CategoryBar/>
             
-            <div className="uuk-container uk-container-xpand"  style={{backgroundColor:'rgb(240, 235, 2)', width:'100%',padding:10 ,borderRadius:15, height:item?null:'600px' }}>
+            <div className="uuk-container uk-container-xpand"  style={{backgroundColor:'#fefe3b', width:'100%',padding:10 ,borderRadius:15, height:item?null:'600px' }}>
             <div className="uk-child-width-1-5@m uk-flex uk-flex-wrap uk-flex-center" uk-grid>
              {item ? data.map((item,i)=>
                 <Cards key={i} {...item}/>)

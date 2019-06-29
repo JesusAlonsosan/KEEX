@@ -58,7 +58,7 @@ class AuthFormContainer extends Component {
     console.log(this.props)
     const { error, auth } = this.state
     return (
-      <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style={ {backgroundImage:`url(${backgroundI})`, height:'91.6vh'} }>
+      <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center " style={ {backgroundImage:`url(${backgroundI})`, height:'100vh'} }>
         <div className='uk-flex uk-flex-center '>
           <AuthForm
             {...auth}

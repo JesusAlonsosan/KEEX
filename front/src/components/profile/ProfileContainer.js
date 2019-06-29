@@ -69,10 +69,10 @@ export default class ProfileContainer extends Component {
     let { data, notFound, user } = this.state;
     let item = true;
     return (
-      <div style={{ backgroundColor: "rgb(240, 235, 2)", padding: 60 }}>
+      <div style={{ backgroundColor: "#fefe3b", padding: 60 }}>
         <div
           style={{
-            backgroundColor: "rgb(240, 235, 2)",
+            backgroundColor: "#fefe3b",
             width: "100%",
             borderRadius: 15,
             padding: 20
@@ -84,7 +84,7 @@ export default class ProfileContainer extends Component {
             className="space uk-child-width-1-4@m uk-flex uk-flex-wrap uk-flex-center "
             style={{
               marginTop: 30,
-              backgroundColor: "rgb(240, 235, 2)",
+              backgroundColor: "#fefe3b",
               padding: 10,
               borderRadius: 15
             }}

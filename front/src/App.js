@@ -36,6 +36,8 @@ class App extends Component {
 
       <div  >
     <Router setUser={this.setUser} user={user}/>
+    
+
   </div>
 </div>
     )

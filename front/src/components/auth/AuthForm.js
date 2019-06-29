@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const AuthForm = ({ handleSubmit, handleChange, error, email, password }) => (
+  
   <div className="uk-card uk-card-default uk-card-body uk-card-large ">
     <form className="uk-form-stacked" onSubmit={handleSubmit}>
       <div className="uk-margin">

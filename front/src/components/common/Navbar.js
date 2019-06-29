@@ -8,8 +8,8 @@ const NavBar = ({ _id, email, username, logout }) => (
     uk-sticky="bottom: #offset"
   >
     <div className="uk-navbar-left">
-      <a className="uk-navbar-item uk-logo uk-flex uk-flex-left" href="/">
-        <img src={require("../assets/img/logo/logo2.png")} width="23%" />
+      <a className="uk-navbar-item  uk-flex uk-flex-left" href="/">
+        <img src={require("../assets/img/logo/logocool2.png")} width="80%" />
       </a>
     </div>
 
