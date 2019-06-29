@@ -15,7 +15,7 @@ export default class ProfileContainer extends Component {
 
     notFound: {
       image:
-        "http://3.bp.blogspot.com/_OKuxUTAuezU/RtOMIQKUGyI/AAAAAAAAABE/8zZgXZKHNew/s320/homero.gif",
+        "https://cordobatimes.com/showup/wp-content/uploads/2014/07/Bart.png",
       name: "Aún no subes productos",
       description: "Por favor sube algún producto ",
       category: "123nijisajd213",
