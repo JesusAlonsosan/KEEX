@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const AuthForm = ({ handleSubmit, handleChange, error, email, password }) => (
-  
   <div className="uk-card uk-card-default uk-card-body uk-card-large ">
     <form className="uk-form-stacked" onSubmit={handleSubmit}>
       <div className="uk-margin">
@@ -49,7 +48,7 @@ const AuthForm = ({ handleSubmit, handleChange, error, email, password }) => (
 
       <div className="uk-flex uk-flex-center">
         <span>
-          ¿No tienes cuenta? Registrate <Link to="/register">aqui</Link>{" "}
+          ¿No tienes cuenta? <Link to="/register"> Registrate aqui</Link>{" "}
         </span>
       </div>
     </form>

@@ -5,8 +5,8 @@ import backgroundI from "../assets/img/atico.jpeg";
 const Titlelending = () => (
   <div
     className="uk-flex uk-flex-center uk-flex-middle uk-height-large uk-background-cover uk-light uk-flex"
-    uk-parallax="bgy: -250"
-    style={{ backgroundImage: `url(${backgroundI})`, height: "100vh" }}
+    uk-parallax="bgy: -200"
+    style={{ backgroundImage: `url(${backgroundI})`, height: "75vh" }}
   >
     <div className="uk-flex uk-flex-column uk-text-center">
       {/*<img src={require('../assets/img/logo/logo.png')}/>*/}

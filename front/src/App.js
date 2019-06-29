@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Router from './Router'
 import NavBar from './components/common/Navbar'
+import { getCategories } from './services/categories';
 
 
 class App extends Component {
@@ -28,6 +29,7 @@ class App extends Component {
     }
   }
 
+
   render () {
     const { user } = this.state
     return (
@@ -36,8 +38,6 @@ class App extends Component {
 
       <div  >
     <Router setUser={this.setUser} user={user}/>
-    
-
   </div>
 </div>
     )

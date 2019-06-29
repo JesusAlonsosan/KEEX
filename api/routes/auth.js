@@ -6,6 +6,7 @@ const User = require('../models/User')
 const uploader = require("../helpers/multer")
 
 router.post('/register' , (req, res, next) => {
+  console.log('asdasdasdasdasd',req.body)
   let {password,confirmPassword} = req.body;
   if ( password !== confirmPassword )
     return res.status(500).json({
@@ -38,6 +39,7 @@ router.post('/register' , (req, res, next) => {
 
 router.post('/login', (req, res, next) => {
   const { email, password } = req.body
+  console.log('login',req.body)
   User.findOne ({ email }).then(user => {
     if (!user) {
       return res.status(404).json({

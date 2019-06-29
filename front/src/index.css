@@ -15,16 +15,12 @@ code {
   line-height: 1.2;
   color: #9b2121;
   text-shadow: 8px 8px #fefe3b;
-  
 }
-
 
 .titlehkeex3 {
   font-size: 160px;
   line-height: 1.2;
   color: #fefe3b;
-  
-  
 }
 
 .titleapp {
@@ -42,7 +38,7 @@ code {
   padding: 60px 0;
 }
 
-.titleh  {
+.titleh {
   font-size: 30px;
   color: #9e9e9e;
 }
@@ -53,7 +49,7 @@ code {
   bottom: 0;
   left: 0;
   width: 100%;
-  min-height: 150px;
+  min-height: 170px;
   padding: 60px 0;
 }
 
@@ -64,7 +60,7 @@ code {
 .footerh2 {
   color: #ffffff;
   font-size: 40px;
-  margin-top: 20px;  
+  margin-top: 20px;
 }
 
 .footerh0 {

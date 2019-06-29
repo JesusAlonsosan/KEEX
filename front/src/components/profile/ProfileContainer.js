@@ -4,75 +4,51 @@ import backgroundI from "../assets/img/fondolending.jpg";
 import Cards from "../common/Cards";
 import ProfileDataUser from "./ProfileDataUser";
 import ProductCardProfile from "./ProductCardProfile";
+import { getMyProducts } from "../../services/products";
+import ModalEditUser from "../common/ModalEditUser";
 
 export default class ProfileContainer extends Component {
   state = {
     data: [
-      {
-        image: backgroundI,
-        name: "Cosas viejas",
-        description: "Lorem impsu dolor askdoasijdoiasdnoi",
-        category: "123nijisajd213",
-        inStock: true
-      },
-      {
-        image: "https://pbs.twimg.com/media/DvmISHOXgAAc-VV.png",
-        name: "Godzilla",
-        description: "Lorem impsu dolor Cartas",
-        category: "123nijisajd213",
-        inStock: true
-      },
-      {
-        image: backgroundI,
-        name: "Cosas nuevas",
-        description: "Lorem impsu dolor askdoasijdoiasdnoi",
-        category: "123nijisajd213",
-        inStock: false
-      },
-      {
-        image: backgroundI,
-        name: "Cosas medianas",
-        description: "Lorem impsu dolor askdoasijdoiasdnoi",
-        category: "123nijisajd213",
-        inStock: true
-      },
-      {
-        image: backgroundI,
-        name: "Cosas musica",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
-        category: "123nijisajd213",
-        inStock: false
-      }
+
     ],
 
     notFound: {
       image:
         "http://3.bp.blogspot.com/_OKuxUTAuezU/RtOMIQKUGyI/AAAAAAAAABE/8zZgXZKHNew/s320/homero.gif",
       name: "Aún no subes productos",
-      description: "Lorem imaskdoasijdoiasdnoipsu dolor ",
+      description: "Por favor sube algún producto ",
       category: "123nijisajd213",
       inStock: true
     },
     user: {
-      username: "Jesús Alonso",
-      lastname: "Sanchez",
-      email: "info@keex.com.mx",
-      raiting: 9.0,
-      image:
-        "https://tuul.tv/themes/tuul_lite/img/default-user.jpg ",
-      description:
-        "La informática es mi hobby, mi profesión y mi pasión. Soy un afortunado usuario y desarrollador. Disfruto de esto desde hace ya más de 15 años, y gracias a Ironhack "
-    }
+    },
+    products:[]
   };
+  componentWillMount(){
+    this.getData()
+  }
 
+  getData=()=>{
+    let user = JSON.parse(localStorage.getItem('USER'))
+    if(user){
+      getMyProducts(user._id).then(r=>this.setState({products:r})).catch(err=>console.log(err))
+
+      this.setState({user})
+    }else{
+      this.props.history.push('/')
+    }
+    
+  }
   render() {
-    let { data, notFound, user } = this.state;
-    let item = true;
+    let { data, notFound, user,products } = this.state;
+    
+    console.log('adsadsa',products)
     return (
-      <div style={{ backgroundColor: "#fefe3b", padding: 60 }}>
+      <div style={{ backgroundColor: "rgb(240, 235, 2)", padding: 60 }}>
         <div
           style={{
-            backgroundColor: "#fefe3b",
+            backgroundColor: "rgb(240, 235, 2)",
             width: "100%",
             borderRadius: 15,
             padding: 20
@@ -84,14 +60,16 @@ export default class ProfileContainer extends Component {
             className="space uk-child-width-1-4@m uk-flex uk-flex-wrap uk-flex-center "
             style={{
               marginTop: 30,
-              backgroundColor: "#fefe3b",
+              backgroundColor: "rgb(240, 235, 2)",
               padding: 10,
               borderRadius: 15
             }}
           >
-            {data.map((item, i) => (
+            {products.length ? data.map((item, i) => 
               <ProductCardProfile {...item} />
-            ))}
+            ):
+            <ProductCardProfile {...notFound} />
+            }
           </div>
         </div>
       </div>

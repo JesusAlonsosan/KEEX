@@ -30,11 +30,28 @@ router.post('/addProduct',uploader.array("image"), (req,res,next)=>{
   })
 })
 
+//Swipe ra
+router.post('/getProductSwipe/', (req,res,next) => {
+let {id}= req.body
+Product.count({_owner:{$ne: id}}, function( err, count){
+  console.log( "Number of users:", count );
+  let random = Math.floor(Math.random() * count)
+  console.log( "Number of users:", random );
+  Product.findOne({_owner:{$ne: id}}).skip(random).then(product => 
+    res.status(200).json({product})
+    ).catch(error => {
+      error.action = 'Error while find product'
+      next(error)
+    });
+})
 
-router.get('/getProductSwipe/:id', (req,res,next) => {
-let {id}= req.params
 
-  Product.findOne({_owner:{$ne: id}}).then(product => 
+}) 
+
+
+router.post('/getAllProduct', (req,res,next) => {
+  let{id}=req.body
+  Product.find({_owner:{$ne: id}}).then(product => 
     res.status(200).json({product})
     ).catch(error => {
       error.action = 'Error while find product'
@@ -43,19 +60,8 @@ let {id}= req.params
 }) 
 
 
-router.get('/getAllProduct', (req,res,next) => {
-
-  Product.find().then(product => 
-    res.status(200).json({product})
-    ).catch(error => {
-      error.action = 'Error while find product'
-      next(error)
-    });
-}) 
-
-
-router.get('/getProductByUser/:id', (req,res,next) => {
-  let {id}= req.params
+router.post('/getProductByUser/', (req,res,next) => {
+  let {id}= req.body
   Product.find({_owner:id}).then(product => 
     res.status(200).json({product})
     ).catch(error => {
@@ -65,10 +71,10 @@ router.get('/getProductByUser/:id', (req,res,next) => {
 }) 
 
 
-router.get('/getProductsByCategory/:id',(req,res,next)=>{
+router.post('/getProductsByCategory/:id',(req,res,next)=>{
   let {id} = req.params
-  
-  Product.find({category:id}).then(products=>
+  let {_id} = req.body
+  Product.find({category:id,_owner:{$ne: _id}}).then(products=>
     res.status(200).json({products})).catch(error => {
       error.action = 'Error while find product by category'
       next(error)
@@ -80,8 +86,8 @@ router.patch('/:id/edit', (req,res,next) => {
 
   let {id}= req.params
   let product = req.body
-
-  Product.findByIdAndUpdate({_id:id}, { $set: {...category} }, { new: true }).then (product => 
+  
+  Product.findByIdAndUpdate({_id:id}, { $set: {...product} }, { new: true }).then (product => 
     res.status(200).json({product})
     ).catch(error => {
       error.action = 'Error while edit product'

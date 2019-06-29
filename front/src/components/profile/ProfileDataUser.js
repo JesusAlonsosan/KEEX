@@ -1,12 +1,12 @@
 import React from 'react'
 import Raiting from '../../Raiting';
-
+import {Link} from 'react-router-dom'
 const ProfileDataUser = ({username,description,image,raiting})=>(
     <div className=" uk-flex uk-flex-center" >
     <div className="uk-container uk-container-center ">
-        <img src={image} width='350px' height='350px' style={{borderRadius:150/2}}/>
+        <img src={image} width='350px' height='35   0px' style={{borderRadius:150/2}}/>
     </div>
-    <div className="uk-container uk-container-xsmall uk-flex uk-flex-center"  style={{backgroundColor:'#fefe3b',padding:10 ,borderRadius:15,marginTop:10 }}>
+    <div className="uk-container uk-container-xsmall uk-flex uk-flex-center"  style={{backgroundColor:'rgb(240, 235, 2)',padding:10 ,borderRadius:15,marginTop:10 }}>
 
 
     <article className="uk-article">
@@ -26,10 +26,16 @@ const ProfileDataUser = ({username,description,image,raiting})=>(
                 <div className="uk-text uk-text-large">
                      <Raiting className=""/>
                 </div>
+                <div className="uk-text uk-text-large uk-flex uk-flex-column">
+                     <Link to='/editUser' >Editar perfil</Link>
+                     <Link to='/addProduct' >Agregar producto </Link>
+                </div>
+               
             </div>
-
+            
     </article>
-        
+
+    
     </div>
 </div>
 )

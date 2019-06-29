@@ -11,7 +11,7 @@ const Whatislending = ({ toons }) => (
     style={{ backgroundColor: "#f7f7f7", padding: "5% 20% 7%", height: "35%" }}
   >
     <div className="uk-container-center uk-text-center">
-      <h2 className="subtitleh2 uk-text-center" style={{fontSize:50, color: "#0E0E0E" }}>
+      <h2 className="subtitleh2 uk-text-center" style={{ color: "#0E0E0E" }}>
         ¿KEEX, EN QUÉ CONSISTE?
       </h2>
     </div>
@@ -19,7 +19,7 @@ const Whatislending = ({ toons }) => (
     <div className="uk-container-center uk-text-center">
       <p
         className="uk-text-large uk-text-center uk-margen-medium-top  "
-        style={{ fontSize: 33, color: "#666" }}
+        style={{ fontSize: 31, color: "#666" }}
       >
         En que cualquier sector de la sociedad puede hacer un intercambio de
         algún objeto y servicio por otros objetos o servicios.

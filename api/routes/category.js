@@ -14,7 +14,7 @@ router.post('/add', (req,res,next) => {
 }) 
 
 
-router.get('/addAll', (req,res,next) => {
+router.get('/getAll', (req,res,next) => {
 
   Category.find().then(category => 
     res.status(200).json({category})
