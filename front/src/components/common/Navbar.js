@@ -9,7 +9,7 @@ const NavBar = ({ _id, email, username, logout }) => (
   >
     <div className="uk-navbar-left">
       <a className="uk-navbar-item uk-logo uk-flex uk-flex-left" href="/">
-        <img src={require("../assets/img/logo/logo2.png")} width="23%" />
+        <img src={require("../assets/img/logo/logocool2.png")} width="80%" />
       </a>
     </div>
 
@@ -44,5 +44,3 @@ const NavBar = ({ _id, email, username, logout }) => (
 );
 
 export default NavBar;
-
-//uk-navbar-transparent  NAVBAR TRANSPARENTE

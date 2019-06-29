@@ -32,11 +32,11 @@ export default class Lending extends Component {
           <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical"
            >
 
-            <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;" style={{color:'#FFFF'}}> 
+            <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;" style={{fontSize:55, color:'#FFFF'}}> 
              ¿KEEX, QUÉ ES? 
             </h1>
 
-            <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;" style={{fontSize:31, color:'#CBC9C9'}} >
+            <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;" style={{fontSize:34, color:'#CBC9C9'}} >
               En una App para organizar una red propia de trueque.
             </p>
 
