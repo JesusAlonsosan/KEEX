@@ -37,7 +37,7 @@ class SwipeContainer extends Component {
     let{noThanks,yesThanks}=this
     let item = true;
     return (
-      <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style={{ backgroundColor:  "rgb(240, 235, 2)", padding: "60px" ,height:"91.5vh"  }}>
+      <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style={{ backgroundColor:  "#fefe3b", padding: "60px" ,height:"91.5vh"  }}>
         <div
           style={{
             backgroundColor: "",

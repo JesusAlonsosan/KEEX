@@ -38,10 +38,10 @@ class EditUser extends Component {
     render(){
         let{user}=this.state
         return(
-            <div style={{ backgroundColor: "rgb(240, 235, 2)", padding: 60 }}>
+            <div style={{ backgroundColor: "#fefe3b", padding: 60 }}>
                 <div
                 style={{
-                    backgroundColor: "rgb(240, 235, 2)",
+                    backgroundColor: "#fefe3b",
                     width: "100%",
                     borderRadius: 15,
                     padding: 20

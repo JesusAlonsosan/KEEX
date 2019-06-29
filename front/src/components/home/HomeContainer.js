@@ -62,12 +62,12 @@ export default class HomeContainer extends Component {
 
     notFound: {
       image:
-        "https://i.pinimg.com/originals/7c/42/97/7c42975ef89a34943bcb5e022a326840.jpg",
-      name: "No hay produtos",
-      description: "Aún no hay ningun producto en esta categoria ",
+        "https://www.bicifan.uy/wp-content/uploads/2016/07/Producto_sin_imagen_.jpg?x90107",
+      name: "No hay productos",
+      description: "Aún  ningun producto en esta categoria ",
       category: "123nijisajd213",
       inStock: true
-    },
+    },  
     category: [],
     products: [],
     cat: "all"
@@ -114,7 +114,7 @@ export default class HomeContainer extends Component {
     return (
       <div
         style={{
-          backgroundColor: "rgb(240, 235, 2)",
+          backgroundColor: "#fefe3b",
           padding: 80,
           height: products.length ? null : "90vh"
         }}
@@ -124,7 +124,7 @@ export default class HomeContainer extends Component {
         <div
           className="uuk-container uk-container-xpand"
           style={{
-            backgroundColor: "rgb(240, 235, 2)",
+            backgroundColor: "#fefe3b",
             width: "100%",
             padding: 10,
             borderRadius: 15,
