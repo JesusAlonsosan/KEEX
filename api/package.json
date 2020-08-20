@@ -9,7 +9,7 @@
     "deploy": "cd .. && git subtree push --prefix api heroku master"
   },
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "cloudinary": "^1.14.0",
     "cookie-parser": "^1.4.3",
